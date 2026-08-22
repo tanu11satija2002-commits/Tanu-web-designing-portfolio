@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Royal Jewels</title>
+<style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+        font-family: Georgia, "Times New Roman", serif;
+        background: #fffaf5;
+        color: #3b2a20;
+    }
+    header {
+        background: #4b1020;
+        color: white;
+        padding: 22px 8%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .logo {
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+    }
+    nav a:hover { color: #f5c76a; }
+
+    .hero {
+        text-align: center;
+        padding: 70px 20px;
+        background: linear-gradient(135deg, #fff1d6, #f8d8b0);
+    }
+    .hero h1 {
+        font-size: 48px;
+        color: #4b1020;
+        margin-bottom: 12px;
+    }
+    .hero p {
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+    .btn {
+        display: inline-block;
+        background: #b8860b;
+        color: white;
+        padding: 12px 25px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+    }
+
+    .section { padding: 45px 8%; }
+    .section h2 {
+        text-align: center;
+        color: #4b1020;
+        margin-bottom: 25px;
+        font-size: 30px;
+    }
+
+    .categories {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+    .categories a {
+        text-decoration: none;
+        background: white;
+        color: #4b1020;
+        border: 2px solid #d4af37;
+        padding: 12px 18px;
+        border-radius: 25px;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        transition: .3s;
+    }
+    .categories a:hover {
+        background: #4b1020;
+        color: white;
+    }
+
+    .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 25px;
+    }
+    .card {
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 5px 18px rgba(75,16,32,.12);
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .jewel-img {
+        height: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff2dc;
+        font-size: 75px;
+    }
+    .card h3 { margin: 15px 0 8px; color: #4b1020; }
+    .price {
+        color: #b8860b;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+    }
+    .buy {
+        display: inline-block;
+        margin-top: 12px;
+        padding: 9px 18px;
+        background: #4b1020;
+        color: white;
+        text-decoration: none;
+        border-radius: 20px;
+        font-family: Arial, sans-serif;
+    }
+
+    footer {
+        margin-top: 30px;
+        background: #4b1020;
+        color: white;
+        text-align: center;
+        padding: 25px;
+        font-family: Arial, sans-serif;
+    }
+
+    @media (max-width: 600px) {
+        header { justify-content: center; text-align: center; }
+        .hero h1 { font-size: 36px; }
+        nav { line-height: 2; }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">✨ ROYAL JEWELS</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#categories">Categories</a>
+        <a href="#products">Jewellery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>Elegant Jewellery for Every Occasion</h1>
+    <p>Discover beautiful gold, silver and diamond jewellery.</p>
+    <a class="btn" href="#categories">Explore Collection</a>
+</section>
+
+<section class="section" id="categories">
+    <h2>Jewellery Categories</h2>
+    <div class="categories">
+        <a href="#bangles">💫 Bangles</a>
+        <a href="#chains">📿 Chains</a>
+        <a href="#earrings">💎 Earrings</a>
+        <a href="#rings">💍 Rings</a>
+        <a href="#necklaces">📿 Necklaces</a>
+        <a href="#gold">🥇 Gold</a>
+        <a href="#silver">🥈 Silver</a>
+        <a href="#diamond">💠 Diamond</a>
+    </div>
+</section>
+
+<section class="section" id="products">
+    <h2>Featured Jewellery</h2>
+    <div class="products">
+
+        <div class="card" id="bangles">
+            <div class="jewel-img">💫</div>
+            <h3>Royal Bangles</h3>
+            <p class="price">₹12,999</p>
+            <a class="buy" href="#">View Product</a>
+        </div>
+
+        <div class="card" id="chains">
+            <div class="jewel-img">📿</div>
+            <h3>Gold Chain</h3>
+            <p class="price">₹28,999</p>
+            <a class="buy" href="#">View Product</a>
+        </div>
+
+        <div class="card" id="earrings">
+            <div class="jewel-img">💎</div>
+            <h3>Diamond Earrings</h3>
+            <p class="price">₹19,999</p>
+            <a class="buy" href="#">View Product</a>
+        </div>
+
+        <div class="card" id="rings">
+            <div class="jewel-img">💍</div>
+            <h3>Classic Ring</h3>
+            <p class="price">₹8,999</p>
+            <a class="buy" href="#">View Product</a>
+        </div>
+
+        <div class="card" id="necklaces">
+            <div class="jewel-img">📿</div>
+            <h3>Designer Necklace</h3>
+            <p class="price">₹35,999</p>
+            <a class="buy" href="#">View Product</a>
+        </div>
+
+        <div class="card" id="gold">
+            <div class="jewel-img">🥇</div>
+            <h3>Gold Jewellery</h3>
+            <p class="price">₹45,999</p>
+            <a class="buy" href="#">View Product</a>
+        </div>
+
+        <div class="card" id="silver">
+            <div class="jewel-img">🥈</div>
+            <h3>Silver Jewellery</h3>
+            <p class="price">₹4,999</p>
+            <a class="buy" href="#">View Product</a>
+        </div>
+
+        <div class="card" id="diamond">
+            <div class="jewel-img">💠</div>
+            <h3>Diamond Collection</h3>
+            <p class="price">₹55,999</p>
+            <a class="buy" href="#">View Product</a>
+        </div>
+
+    </div>
+</section>
+
+<footer id="contact">
+    <p>© 2026 Royal Jewels | Elegant • Beautiful • Timeless</p>
+</footer>
+
+</body>
+</html>
