@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tanu Satija | Web Designing Portfolio</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,sans-serif;color:#202936;background:#f7f9fc;line-height:1.6}
+nav{position:sticky;top:0;z-index:10;background:#14365c;padding:12px 5%;display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
+nav a{color:white;text-decoration:none;font-weight:700;font-size:14px}
+.hero{padding:75px 7%;background:linear-gradient(135deg,#14365c,#2768a8);color:white;text-align:center}
+.hero h1{font-size:42px;margin:0 0 10px}.hero p{font-size:20px;margin:8px auto;max-width:800px}
+.btn{display:inline-block;margin:15px 6px;padding:11px 20px;border-radius:25px;background:white;color:#14365c;text-decoration:none;font-weight:700}
+section{max-width:1100px;margin:auto;padding:55px 6%}
+h2{color:#14365c;font-size:30px;margin-top:0}
+.card{background:white;border-radius:16px;padding:24px;margin:15px 0;box-shadow:0 5px 18px #00000010}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.skill{padding:18px;border-left:5px solid #2768a8;background:white;border-radius:10px;box-shadow:0 3px 12px #0000000d}
+.badge{display:inline-block;padding:5px 10px;border-radius:15px;background:#eef6fc;color:#14365c;margin:4px;font-size:13px;font-weight:700}
+.timeline{border-left:3px solid #2768a8;padding-left:22px}
+.timeline .card{position:relative}.timeline .card:before{content:"";position:absolute;left:-32px;top:28px;width:13px;height:13px;border-radius:50%;background:#2768a8}
+pre{background:#17202b;color:#eef6fc;padding:18px;border-radius:12px;overflow:auto;font-size:13px}
+footer{background:#14365c;color:white;text-align:center;padding:30px}
+.small{font-size:14px;color:#5c6673}.quote{font-size:20px;font-style:italic;color:#14365c}
+</style>
+</head>
+<body>
+<nav>
+<a href="#about">About</a><a href="#journey">Journey</a><a href="#achievements">Achievements</a>
+<a href="#skills">Skills</a><a href="#assessments">Assessments</a><a href="#projects">Projects</a>
+<a href="#accessibility">Accessibility</a><a href="#future">Future</a><a href="#thanks">Thanks</a>
+</nav>
+
+<header class="hero">
+<h1>Tanu Satija</h1>
+<p>ITI COPA Student • Web Designing Learner • National Abilympics Aspirant</p>
+<p>“I am still learning, but I believe in my ability to learn, practice and improve.”</p>
+<a class="btn" href="#projects">View My Work</a>
+<a class="btn" href="#about">About Me</a>
+</header>
+
+<section id="about">
+<h2>About Me</h2>
+<div class="card">
+<p>My name is <b>Tanu Satija</b>. I am 24 years old and live in Bikaner, Rajasthan. I belong to a joint, middle-class family. My father is Madhusudan Satija and my mother is Anita Satija. I am a student and have completed ITI in COPA.</p>
+<p>My goal is to continue improving my technical skills and participate in National Abilympics to prove myself through my skills and hard work.</p>
+</div>
+</section>
+
+<section id="journey">
+<h2>My Learning Journey</h2>
+<div class="timeline">
+<div class="card"><b>ITI COPA</b><br>Completed ITI and secured first rank in my batch.</div>
+<div class="card"><b>Small HTML Assessments</b><br>Started with a student table and student registration forms.</div>
+<div class="card"><b>CSS & JavaScript</b><br>Learned styling and basic programming concepts including conditions, loops and functions.</div>
+<div class="card"><b>Programming & Database</b><br>Learned basic Java, OOPs fundamentals, SQL commands and Visual Basic concepts.</div>
+<div class="card"><b>Projects & Competition</b><br>Created small web projects and gained competition experience through RajSkill.</div>
+</div>
+</section>
+
+<section id="achievements">
+<h2>Achievements</h2>
+<div class="grid">
+<div class="skill"><h3>🥇 ITI First Rank</h3><p>First rank in my COPA batch.</p></div>
+<div class="skill"><h3>🏆 RajSkill</h3><p>Competition experience at regional/district/state levels as described in my portfolio.</p></div>
+<div class="skill"><h3>📜 Certificates</h3><p>ITI appreciation and competition certificates are part of my portfolio.</p></div>
+<div class="skill"><h3>🎯 National Abilympics</h3><p>A new opportunity to challenge myself, learn and prove my skills.</p></div>
+</div>
+</section>
+
+<section id="skills">
+<h2>Technical Skills</h2>
+<div class="grid">
+<div class="skill"><h3>HTML</h3><span class="badge">Tables</span><span class="badge">Forms</span><span class="badge">Tags</span></div>
+<div class="skill"><h3>CSS</h3><span class="badge">Styling</span><span class="badge">Flexbox</span><span class="badge">Grid</span><span class="badge">Responsive basics</span></div>
+<div class="skill"><h3>JavaScript</h3><span class="badge">if-else</span><span class="badge">for loop</span><span class="badge">Functions</span></div>
+<div class="skill"><h3>Java</h3><span class="badge">Basic programming</span><span class="badge">OOPs fundamentals</span></div>
+<div class="skill"><h3>SQL</h3><span class="badge">Create</span><span class="badge">Insert</span><span class="badge">Update</span><span class="badge">Delete</span></div>
+<div class="skill"><h3>Visual Basic</h3><span class="badge">Controls</span><span class="badge">Buttons</span><span class="badge">Click events</span></div>
+</div>
+</section>
+
+<section id="assessments">
+<h2>My Practice Assessments</h2>
+<div class="grid">
+<div class="card"><h3>HTML – Student Form</h3><p>Practiced forms, tables, input fields, dropdowns, checkboxes and buttons.</p>
+<pre>&lt;form&gt;
+  &lt;table&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Enter your name&lt;/td&gt;
+      &lt;td&gt;&lt;input type="textbox"&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+&lt;/form&gt;</pre></div>
+<div class="card"><h3>JavaScript – Total Cost</h3><p>Practiced selections, loops, conditions and calculation.</p>
+<pre>for(i=0; i&lt;menu1.options.length; i++){
+  if(menu1.options[i].selected == true)
+    sum = sum + parseInt(menu1.options[i].value);
+}</pre></div>
+<div class="card"><h3>JavaScript – Pattern</h3><p>Practiced nested <b>for</b> loops and repeated output.</p>
+<pre>for(x=num; x&gt;0; x--){
+  for(y=1; y&lt;=x; y++){
+    document.write(a);
+    a++;
+  }
+}</pre></div>
+<div class="card"><h3>JavaScript – Character Checker</h3><p>Practiced if-else decision making and logical operators.</p>
+<pre>if(num &gt;= 0)
+  alert("digit");
+else if(/* character condition */)
+  alert("character");
+else
+  alert("special");</pre></div>
+</div>
+</section>
+
+<section id="projects">
+<h2>My Projects</h2>
+<div class="grid">
+<div class="skill"><h3>Women ITI Based Assessment</h3><p>My first project based on what I learned in ITI, developed with guidance and internet learning resources.</p></div>
+<div class="skill"><h3>Chessboard</h3><p>A web-designing practice project using HTML and CSS concepts.</p></div>
+<div class="skill"><h3>Royal Jewels</h3><p>A small website project demonstrating my web-designing practice.</p></div>
+</div>
+<p class="small">Project code can be linked here after uploading the project repositories to GitHub.</p>
+</section>
+
+<section id="accessibility">
+<h2>Accessibility & My Working Style</h2>
+<div class="card">
+<p>I am left-handed and my affected hand makes handwriting difficult and time-consuming.</p>
+<p><b>I do not require a writer/scribe.</b> I prefer to complete my work myself. I request additional time when required for written tasks or assessments so that my technical ability can be demonstrated fairly.</p>
+</div>
+</section>
+
+<section id="future">
+<h2>Future Learning</h2>
+<div class="card">
+<p>I want to continue improving my web-designing skills, especially JavaScript and practical project development. I also want to build more complete websites, strengthen my programming and database knowledge, and continue learning through projects and competitions.</p>
+</div>
+</section>
+
+<section id="thanks">
+<h2>Why I Want to Participate</h2>
+<div class="card">
+<p class="quote">“I want to prove myself through my skills and hard work, make my parents and teachers proud, and gain confidence through this opportunity.”</p>
+<p>Special thanks to my ITI Computer Instructor <b>Brijesh Sir</b> for giving me a new path, motivation, support, guidance and helping me with information whenever I needed it.</p>
+</div>
+</section>
+
+<footer>
+<p><b>Tanu Satija</b></p>
+<p>National Abilympics Portfolio • Web Designing</p>
+<p class="small" style="color:white">Contact details can be added before publishing publicly.</p>
+</footer>
+</body>
+</html>
