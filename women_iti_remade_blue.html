@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Women ITI | Technical Education</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f9fc;
+    color: #263238;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #064e73;
+    color: white;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo h1 {
+    font-size: 30px;
+}
+
+.logo p {
+    font-size: 14px;
+    color: #d9f2ff;
+}
+
+.header-info {
+    text-align: right;
+    font-size: 14px;
+}
+
+/* Navigation */
+nav {
+    background: #0879b1;
+    padding: 14px 8%;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 14px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #c7efff;
+}
+
+/* Hero */
+.hero {
+    min-height: 430px;
+    background: linear-gradient(135deg, #e0f5ff, #c5eaff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.hero h2 {
+    color: #064e73;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 28px;
+}
+
+.btn {
+    display: inline-block;
+    background: #0879b1;
+    color: white;
+    padding: 13px 28px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.btn:hover {
+    background: #064e73;
+}
+
+.btn-light {
+    background: white;
+    color: #0879b1;
+    border: 1px solid #0879b1;
+}
+
+/* Sections */
+.section {
+    padding: 55px 8%;
+    text-align: center;
+}
+
+.section-title {
+    color: #064e73;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: #607d8b;
+    margin-bottom: 30px;
+}
+
+/* Courses */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 250px;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 14px #d8e4eb;
+    border-top: 4px solid #0879b1;
+}
+
+.card-icon {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    color: #075985;
+    margin-bottom: 10px;
+}
+
+/* About */
+.about {
+    background: #eaf6fc;
+}
+
+.about-box {
+    max-width: 850px;
+    margin: auto;
+}
+
+/* Facilities */
+.facility {
+    width: 210px;
+}
+
+/* Admission */
+.admission {
+    background: #f5f9fc;
+}
+
+form {
+    max-width: 650px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px #d5e2ea;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin: 13px 0 6px;
+    font-weight: bold;
+    color: #064e73;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #b8cbd6;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #0879b1;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 22px;
+    border: none;
+    border-radius: 5px;
+    background: #0879b1;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #064e73;
+}
+
+/* Contact */
+.contact {
+    background: #064e73;
+    color: white;
+}
+
+.contact .section-title {
+    color: white;
+}
+
+.contact p {
+    margin: 8px;
+}
+
+/* Footer */
+footer {
+    background: #03364f;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    font-size: 14px;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    header {
+        text-align: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .header-info {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px 8px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <h1>🏫 Women ITI</h1>
+        <p>Technical Education & Skill Development</p>
+    </div>
+
+    <div class="header-info">
+        <p>📞 +91 98765 43210</p>
+        <p>✉️ womeniti@example.com</p>
+    </div>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#courses">Courses</a>
+    <a href="#about">About</a>
+    <a href="#facilities">Facilities</a>
+    <a href="#admission">Admission</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h2>Empowering Women Through Technical Skills</h2>
+        <p>
+            Build your career with quality vocational training,
+            practical knowledge and professional skills.
+        </p>
+
+        <a href="#admission" class="btn">Apply for Admission</a>
+        <a href="#courses" class="btn btn-light">View Courses</a>
+    </div>
+</section>
+
+<section class="section" id="courses">
+    <h2 class="section-title">Our Courses</h2>
+    <p class="section-subtitle">Choose a skill and build your future.</p>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="card-icon">💻</div>
+            <h3>COPA</h3>
+            <p>
+                Computer operation, office applications,
+                internet and basic programming skills.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">⚡</div>
+            <h3>Electrician</h3>
+            <p>
+                Electrical wiring, equipment handling
+                and electrical safety practices.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">✂️</div>
+            <h3>Dress Making</h3>
+            <p>
+                Stitching, garment making, designing
+                and tailoring skills.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">💄</div>
+            <h3>Beauty & Wellness</h3>
+            <p>
+                Beauty care, wellness and professional
+                personal-care skills.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section about" id="about">
+    <div class="about-box">
+        <h2 class="section-title">About Women ITI</h2>
+        <p class="section-subtitle">
+            Women ITI provides technical and vocational education
+            designed to help women gain practical skills, confidence
+            and career opportunities.
+        </p>
+    </div>
+</section>
+
+<section class="section" id="facilities">
+    <h2 class="section-title">Our Facilities</h2>
+    <p class="section-subtitle">A supportive environment for practical learning.</p>
+
+    <div class="cards">
+
+        <div class="card facility">
+            <div class="card-icon">💻</div>
+            <h3>Computer Lab</h3>
+            <p>Practical computer training and digital learning.</p>
+        </div>
+
+        <div class="card facility">
+            <div class="card-icon">🔧</div>
+            <h3>Workshop</h3>
+            <p>Hands-on training with tools and equipment.</p>
+        </div>
+
+        <div class="card facility">
+            <div class="card-icon">📚</div>
+            <h3>Library</h3>
+            <p>Learning materials and educational resources.</p>
+        </div>
+
+        <div class="card facility">
+            <div class="card-icon">👩‍🏫</div>
+            <h3>Expert Teachers</h3>
+            <p>Guidance from trained and experienced instructors.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section admission" id="admission">
+    <h2 class="section-title">Student Admission Form</h2>
+    <p class="section-subtitle">Fill in your details to apply.</p>
+
+    <form>
+        <label>Student Name</label>
+        <input type="text" placeholder="Enter your full name" required>
+
+        <label>Date of Birth</label>
+        <input type="date" required>
+
+        <label>Parent / Guardian Name</label>
+        <input type="text" placeholder="Enter parent or guardian name" required>
+
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Mobile Number</label>
+        <input type="tel" placeholder="Enter mobile number" required>
+
+        <label>Address</label>
+        <textarea rows="4" placeholder="Enter your address"></textarea>
+
+        <label>Select Course</label>
+        <select required>
+            <option value="">-- Select Course --</option>
+            <option>COPA</option>
+            <option>Electrician</option>
+            <option>Dress Making</option>
+            <option>Beauty & Wellness</option>
+        </select>
+
+        <button type="submit">Submit Application</button>
+    </form>
+</section>
+
+<section class="section contact" id="contact">
+    <h2 class="section-title">Contact Us</h2>
+
+    <p>📍 <b>Address:</b> Women ITI, Your City, India</p>
+    <p>📞 <b>Phone:</b> +91 98765 43210</p>
+    <p>✉️ <b>Email:</b> womeniti@example.com</p>
+</section>
+
+<footer>
+    <p>© 2026 Women ITI | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
