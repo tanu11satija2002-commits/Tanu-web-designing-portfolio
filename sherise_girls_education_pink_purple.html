@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SheRise - Girls Education</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff7fc;
+    color: #35233f;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #7b2cbf, #c026d3);
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 9px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd6f7;
+}
+
+/* Hero */
+.hero {
+    min-height: 470px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 70px 20px;
+    background: linear-gradient(135deg, #f9d8ff, #ffe4f3, #eadcff);
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    color: #7020a8;
+    margin-bottom: 18px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #594261;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 28px;
+    padding: 13px 28px;
+    background: linear-gradient(90deg, #7b2cbf, #c026d3);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(123, 44, 191, 0.25);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Sections */
+.section {
+    padding: 55px 8%;
+}
+
+.section h2 {
+    text-align: center;
+    color: #7020a8;
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.about {
+    text-align: center;
+    max-width: 950px;
+    margin: auto;
+}
+
+.about p {
+    line-height: 1.8;
+    color: #66556d;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 30px 22px;
+    text-align: center;
+    border-radius: 18px;
+    border: 1px solid #f1d8f7;
+    box-shadow: 0 8px 25px rgba(100, 35, 120, 0.10);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 30px rgba(100, 35, 120, 0.18);
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+    margin: auto auto 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f7e5ff;
+    border-radius: 50%;
+    font-size: 35px;
+}
+
+.card h3 {
+    color: #7b2cbf;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #6d5b72;
+    line-height: 1.6;
+}
+
+/* Stats */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h3 {
+    color: #c026d3;
+    font-size: 32px;
+}
+
+/* Quote */
+.quote {
+    background: linear-gradient(135deg, #7b2cbf, #c026d3);
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.quote h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.quote p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    background: #351044;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 650px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        line-height: 2.2;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .stats {
+        gap: 30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🌸 SheRise</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Empower Her Through Education</h1>
+        <p>
+            Every girl deserves the chance to learn, dream and build
+            a brighter future. Education gives her the confidence,
+            skills and opportunities to rise.
+        </p>
+        <a href="#courses" class="btn">Explore Courses</a>
+    </div>
+</section>
+
+<section class="section" id="about">
+    <div class="about">
+        <h2>About SheRise</h2>
+        <p>
+            SheRise is a girls education platform designed to encourage
+            learning, digital skills, career development and personal growth.
+            Our goal is to create a welcoming space where every girl can
+            discover her potential and move confidently toward her goals.
+        </p>
+
+        <div class="stats">
+            <div class="stat">
+                <h3>500+</h3>
+                <p>Students</p>
+            </div>
+            <div class="stat">
+                <h3>25+</h3>
+                <p>Courses</p>
+            </div>
+            <div class="stat">
+                <h3>20+</h3>
+                <p>Mentors</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="courses">
+    <h2>Popular Courses</h2>
+
+    <div class="cards">
+        <div class="card">
+            <div class="icon">📚</div>
+            <h3>Academic Learning</h3>
+            <p>Build strong foundations in school and higher education subjects.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">💻</div>
+            <h3>Digital Skills</h3>
+            <p>Learn computer basics, web design, coding and useful digital skills.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🎓</div>
+            <h3>Higher Education</h3>
+            <p>Explore college, university and professional learning opportunities.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">💼</div>
+            <h3>Career Skills</h3>
+            <p>Develop communication, leadership, teamwork and workplace skills.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="benefits">
+    <h2>Why Education Matters</h2>
+
+    <div class="cards">
+        <div class="card">
+            <div class="icon">🌟</div>
+            <h3>Build Confidence</h3>
+            <p>Education helps girls express themselves and make informed decisions.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🚀</div>
+            <h3>Create Opportunities</h3>
+            <p>Learning can open pathways to further education and careers.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🌍</div>
+            <h3>Make an Impact</h3>
+            <p>Educated girls can contribute positively to their families and communities.</p>
+        </div>
+    </div>
+</section>
+
+<section class="quote">
+    <h2>Her Education. Her Future.</h2>
+    <p>“When girls learn, communities grow.”</p>
+</section>
+
+<section class="section" id="contact">
+    <div class="about">
+        <h2>Start Your Learning Journey</h2>
+        <p>
+            Take the first step toward learning new skills and achieving
+            your dreams.
+        </p>
+        <a href="#" class="btn">Enroll Now</a>
+    </div>
+</section>
+
+<footer id="contact">
+    <p>© 2026 SheRise | Learn • Grow • Dream • Succeed 🌸</p>
+</footer>
+
+</body>
+</html>
