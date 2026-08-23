@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <script type ="text/javascript">
+            function totalCost()
+            { 
+                sum=0
+                document.getElementById("txta").value=""
+            for(i=0;i<document.forms[0].menu1.options.length;i++)
+            {
+                
+                if(document.forms[0].menu1.options[i].selected==true)
+                {
+                document.getElementById("txta").value+=document.forms[0].menu1.options[i].text
+                document.getElementById("txta").value+="---"+document.forms[0].menu1.options[i].value+"\n"
+                sum=sum+parseInt(document.forms[0].menu1.options[i].value)
+                 }
+             }
+
+             for(i=0;i<document.forms[0].menu2.options.length;i++)
+            {
+                if(document.forms[0].menu2.options[i].selected==true)
+                {
+                document.getElementById("txta").value+=document.forms[0].menu2.options[i].text
+                document.getElementById("txta").value+="---"+document.forms[0].menu2.options[i].value+"\n"
+                sum=sum+parseInt(document.forms[0].menu2.options[i].value)
+                }
+             }
+            for(i=0;i<document.forms[0].menu3.options.length;i++)
+            {
+                if(document.forms[0].menu3.options[i].selected==true)
+                {
+                document.getElementById("txta").value+=document.forms[0].menu3.options[i].text
+                document.getElementById("txta").value+="---"+document.forms[0].menu3.options[i].value+"\n"
+                sum=sum+parseInt(document.forms[0].menu3.options[i].value)
+                 }
+            }
+            
+       
+
+            document.getElementById("txta").value+="totalamount is"+sum
+        }
+        
+        </script>
+        <link rel="stylesheet" href="js.css">
+    </head>
+
+    </head>
+    <body>
+       <h1 align="center"> Welcome to the world famous fast food center</h1>
+        <h1 align="center"> Mac Donalds </h1>
+        <h2 align="center">Select the manu of items of your choice</h2>
+<form>
+    <table cellspacing="30px"  align ="center" name="tab">   
+    <tr>
+    <th>Major Dishes</th>
+    <th>Starers</th>
+    <th>Miscellaneous</th>
+</tr>
+
+    <tr>
+        <td>
+            <select name="menu1" id="a" size="6" multiple>
+                <option value="100">MC Burger</option>
+                <option value="70">Veg Burger</option>
+                <option value="150">Non Veg Burger</option>
+                <option value="190">Pizza</option>
+                <option value="300">Chess Pizza</option>
+                <option value="350">Double Chess Pizza</option>
+            </select>
+        </td>
+
+        <td> <select name="menu2" id="b" size="6" multiple>
+            <option value="40">French Fries </option>
+            <option value="80">Nuggets</option>
+            <option value="100">Momos</option>
+            <option value="50">Cup cake</option>
+            <option value="150">Woffles</option>
+            <option value="200">Donuts</option>
+        </select></td>
+        <td>
+            <select name="menu3" id="c">
+                <option value="100">Expresso </option>
+                <option value="70">Milk shake</option>
+                <option value="150">Ice Tea</option>
+                <option value="190">Bubble tea</option>
+                </select>
+        </td>
+    </tr>
+    <tr >
+        <td colspan="3">
+
+<h2 align="center">
+    The Items Selected Form The Menu are : 
+</h2>
+</td>
+</tr>
+<tr>
+    <td>
+<textarea rows="10" cols="30" name="textarea" id="txta" readonly></textarea>
+</td>
+<td >
+    <input type="button" value="Total Cost" id="tc" onclick="totalCost()">
+    </td>
+    
+    <td>
+    <input type="reset" value="Clear" id="reset">
+</td>
+</tr>
+
+</table>
+</form>
+
+</body>
+</html>
