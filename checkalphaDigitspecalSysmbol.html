@@ -1,17 +1,97 @@
+<!DOCTYPE html>
 <html>
-	<head>
-	<script>
-	
-	num=prompt("Enter any charecter");
-	
-	if(num>=0)
-	alert("digit");  
-	 
-	else if(num>="A" && num<="Z" || num>="a" && num<="z")
-	alert("charecter")
-	
-	else
-	alert("special")
-	</script>
-	</head>
+<head>
+    <title>Character Checker</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 100px;
+            background-color: #f2f2f2;
+        }
+
+        .box {
+            width: 350px;
+            margin: auto;
+            padding: 25px;
+            background-color: white;
+            border: 1px solid gray;
+            border-radius: 10px;
+        }
+
+        input {
+            padding: 10px;
+            width: 200px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: lightblue;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+
+        <h2>Character Checker</h2>
+
+        <input type="text" id="character"
+               placeholder="Enter one character">
+
+        <br>
+
+        <button onclick="checkCharacter()">
+            Check Character
+        </button>
+
+        <p id="result"></p>
+
+    </div>
+
+
+    <script>
+
+        function checkCharacter() {
+
+            let num = document.getElementById("character").value;
+            let result = document.getElementById("result");
+
+            if (num.length == 0) {
+                result.innerHTML = "Please enter a character.";
+            }
+
+            else if (num.length > 1) {
+                result.innerHTML = "Please enter only one character.";
+            }
+
+            else if (num >= "0" && num <= "9") {
+                result.innerHTML = "It is a Digit.";
+            }
+
+            else if ((num >= "A" && num <= "Z") ||
+                     (num >= "a" && num <= "z")) {
+                result.innerHTML = "It is an Alphabet.";
+            }
+
+            else {
+                result.innerHTML = "It is a Special Character.";
+            }
+        }
+
+    </script>
+
+</body>
 </html>
