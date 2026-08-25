@@ -1,21 +1,113 @@
-<html> 
-	<head>
-		<script type="text/javascript">
-		num=parseInt(prompt("Enter Number"))
-		a=1
-		for(x=num;x>0;x--)
-		{
-		for(y=1;y<=x;y++)
-		{
-		document.write(a)
-		a++
-		}
-		document.write("<br>")
-		}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pattern Print</title>
 
-		</script>
-	</head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+            margin-top: 60px;
+        }
+
+        .box {
+            width: 420px;
+            margin: auto;
+            padding: 25px;
+            background-color: white;
+            border: 1px solid #cccccc;
+            border-radius: 10px;
+        }
+
+        input {
+            padding: 10px;
+            width: 180px;
+            margin: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: lightblue;
+        }
+
+        #output {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fafafa;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 20px;
+            line-height: 1.5;
+            min-height: 30px;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
 <body>
-<h1>Pattern by giving number is:</h1>
+
+    <div class="box">
+
+        <h2>Pattern Print</h2>
+
+        <p>Enter the number of rows:</p>
+
+        <input type="number" id="rows" min="1" max="20"
+               placeholder="Enter number">
+
+        <br>
+
+        <button onclick="printPattern()">Print Pattern</button>
+
+        <div id="output"></div>
+
+    </div>
+
+
+    <script>
+
+        function printPattern() {
+
+            let num = parseInt(document.getElementById("rows").value);
+            let output = document.getElementById("output");
+
+            output.innerHTML = "";
+
+            if (isNaN(num) || num < 1) {
+                output.innerHTML =
+                    '<span class="error">Please enter a valid positive number.</span>';
+                return;
+            }
+
+            let a = 1;
+            let pattern = "";
+
+            for (let x = num; x > 0; x--) {
+
+                for (let y = 1; y <= x; y++) {
+                    pattern += a + " ";
+                    a++;
+                }
+
+                pattern += "<br>";
+            }
+
+            output.innerHTML = pattern;
+        }
+
+    </script>
+
 </body>
 </html>
