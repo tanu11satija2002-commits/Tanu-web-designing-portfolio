@@ -5,29 +5,32 @@
 
     <style>
         body {
-            font-family: Arial;
+            font-family: Arial, sans-serif;
             text-align: center;
-            margin-top: 100px;
             background-color: #f2f2f2;
+            margin-top: 80px;
         }
 
         .box {
-            width: 350px;
+            width: 380px;
             margin: auto;
             padding: 25px;
             background-color: white;
-            border: 1px solid gray;
+            border: 1px solid #cccccc;
             border-radius: 10px;
         }
 
         input {
             padding: 10px;
             width: 200px;
+            margin: 10px;
         }
 
         button {
             padding: 10px 20px;
-            margin-top: 15px;
+            margin: 8px 5px;
+            border: none;
+            border-radius: 5px;
             cursor: pointer;
         }
 
@@ -37,7 +40,11 @@
 
         #result {
             margin-top: 20px;
+            padding: 12px;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
             font-weight: bold;
+            min-height: 20px;
         }
     </style>
 </head>
@@ -48,16 +55,23 @@
 
         <h2>Character Checker</h2>
 
+        <p>Enter any one character:</p>
+
         <input type="text" id="character"
-               placeholder="Enter one character">
+               placeholder="Enter character"
+               maxlength="1">
 
         <br>
 
-        <button onclick="checkCharacter()">
+        <button type="button" onclick="checkCharacter()">
             Check Character
         </button>
 
-        <p id="result"></p>
+        <button type="button" onclick="clearResult()">
+            Clear
+        </button>
+
+        <div id="result"></div>
 
     </div>
 
@@ -70,25 +84,40 @@
             let result = document.getElementById("result");
 
             if (num.length == 0) {
-                result.innerHTML = "Please enter a character.";
-            }
 
-            else if (num.length > 1) {
-                result.innerHTML = "Please enter only one character.";
+                result.innerHTML =
+                    "Please enter a character.";
+
             }
 
             else if (num >= "0" && num <= "9") {
-                result.innerHTML = "It is a Digit.";
+
+                result.innerHTML =
+                    "It is a Digit.";
+
             }
 
             else if ((num >= "A" && num <= "Z") ||
                      (num >= "a" && num <= "z")) {
-                result.innerHTML = "It is an Alphabet.";
+
+                result.innerHTML =
+                    "It is an Alphabet.";
+
             }
 
             else {
-                result.innerHTML = "It is a Special Character.";
+
+                result.innerHTML =
+                    "It is a Special Character.";
             }
+        }
+
+
+        function clearResult() {
+
+            document.getElementById("character").value = "";
+
+            document.getElementById("result").innerHTML = "";
         }
 
     </script>
